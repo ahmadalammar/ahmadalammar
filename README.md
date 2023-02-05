@@ -2,7 +2,7 @@
 
 I'm Ahmad Alammar a Certified Spring Professional from VMware. A passionate java developer who always looking to learn more and solve critical problems.
 
-- 🔭 I’m currently working at @MoneyLion
+- 🔭 I’m currently working at @AirAsia
 - 📫 How to reach me: ahmad1costi@gmail.com.
 
 <br />
