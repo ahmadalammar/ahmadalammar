@@ -27,14 +27,6 @@ I'm Ahmad Alammar a Certified Spring Professional from VMware. A passionate java
 
 ----
 ### Github Stats
-<br />
-
-![Ipenywis's github stats](https://github-readme-stats.vercel.app/api?username=ahmadalammar&count_private=true&theme=tokyonight&hide=contribs,prs)
-
-
-<a href="https://github.com/ismailalammar?tab=repositories"><img alt="Ismail Alammar's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmadalammar&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a>
-
-<br />
 
 ----
 :mailbox: Reach me out!
