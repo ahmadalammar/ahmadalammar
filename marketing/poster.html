@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayakahwin.com Marketing Poster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .poster-container {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* TikTok / IG Story Size */
+        .poster-story {
+            width: 360px; /* Scaled down from 1080 for viewing */
+            height: 640px; /* Scaled down from 1920 */
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #333;
+        }
+
+        /* IG Post Size */
+        .poster-feed {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Design Elements */
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 192, 203, 0.3);
+            top: -50px;
+            left: -50px;
+        }
+
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            background: rgba(173, 216, 230, 0.3);
+            bottom: -20px;
+            right: -20px;
+        }
+
+        .content {
+            z-index: 1;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: #d63384;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .highlight {
+            color: #d63384;
+            font-weight: bold;
+        }
+
+        .mockup {
+            background: white;
+            border: 8px solid #333;
+            border-radius: 20px;
+            width: 180px;
+            height: 320px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .mockup::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            width: 40px;
+            height: 4px;
+            background: #eee;
+            border-radius: 2px;
+        }
+
+        .mockup-screen {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .cta-btn {
+            background: #d63384;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .feature-item {
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        /* Feed Specifics */
+        .poster-feed h1 {
+            font-size: 4rem;
+        }
+        
+        .poster-feed .mockup {
+            width: 120px;
+            height: 200px;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            transform: rotate(-10deg);
+        }
+
+        .poster-feed .text-area {
+            align-self: flex-start;
+            text-align: left;
+            padding-left: 20px;
+            max-width: 60%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="poster-container">
+        <!-- TikTok / Story Version (9:16) -->
+        <div class="poster-story">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="content">
+                <div>
+                    <h1>Sayakahwin</h1>
+                    <p>The Modern Way to Invite</p>
+                </div>
+
+                <div class="mockup">
+                    <div class="mockup-screen">
+                        Walimatul<br>Urus
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Going Paperless?</h2>
+                    <p>Go <span class="highlight">Digital</span> with Sayakahwin!</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <span class="icon">✨</span>
+                            <span>Elegant</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">🚀</span>
+                            <span>Instant</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">📱</span>
+                            <span>Mobile</span>
+                        </div>
+                    </div>
+
+                    <a href="https://sayakahwin.com" class="cta-btn">Get Started</a>
+                    <p style="font-size: 0.8rem; margin-top: 10px;">www.sayakahwin.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Feed Version (1:1) -->
+        <div class="poster-feed">
+            <div class="bg-circle circle-1" style="background: rgba(255,255,255,0.4);"></div>
+            <div class="content" style="flex-direction: row; align-items: center;">
+                <div class="text-area">
+                    <h1>Sayakahwin</h1>
+                    <h2>Your Wedding,<br>Your Style.</h2>
+                    <p>Beautiful digital wedding cards for your special day.</p>
+                    <a href="https://sayakahwin.com" class="cta-btn">Create Yours</a>
+                </div>
+                <div class="mockup">
+                    <div class="mockup-screen">
+                        Save<br>The<br>Date
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
