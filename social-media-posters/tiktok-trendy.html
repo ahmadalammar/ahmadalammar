@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayaKahwin TikTok - Trendy Gen-Z Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .poster {
+            width: 1080px;
+            height: 1920px;
+            background: #FFFBF5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        /* Aesthetic blobs */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+        }
+        
+        .blob1 {
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            right: -100px;
+            background: linear-gradient(135deg, #FECACA, #FCA5A5);
+        }
+        
+        .blob2 {
+            width: 350px;
+            height: 350px;
+            top: 600px;
+            left: -150px;
+            background: linear-gradient(135deg, #C4B5FD, #A78BFA);
+        }
+        
+        .blob3 {
+            width: 300px;
+            height: 300px;
+            bottom: 400px;
+            right: -100px;
+            background: linear-gradient(135deg, #A7F3D0, #6EE7B7);
+        }
+        
+        .blob4 {
+            width: 250px;
+            height: 250px;
+            bottom: -50px;
+            left: 100px;
+            background: linear-gradient(135deg, #FDE68A, #FCD34D);
+        }
+        
+        .header {
+            margin-top: 150px;
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .viral-badge {
+            background: #000;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+        
+        .main-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 90px;
+            font-weight: 700;
+            color: #1F2937;
+            line-height: 1.1;
+            padding: 0 60px;
+        }
+        
+        .main-text .soft {
+            color: #9CA3AF;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 60px;
+            font-weight: 400;
+        }
+        
+        .aesthetic-card {
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            margin: 80px 60px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.1);
+            z-index: 10;
+            border: 3px solid #F3F4F6;
+        }
+        
+        .card-inner {
+            text-align: center;
+        }
+        
+        .mini-badge {
+            background: linear-gradient(135deg, #EC4899, #8B5CF6);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        
+        .couple-names {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            color: #1F2937;
+            margin-bottom: 20px;
+        }
+        
+        .wedding-date {
+            font-size: 28px;
+            color: #6B7280;
+            margin-bottom: 30px;
+        }
+        
+        .feature-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .pill {
+            background: #F3F4F6;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 20px;
+            color: #4B5563;
+        }
+        
+        .bottom-section {
+            position: absolute;
+            bottom: 120px;
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .quote {
+            font-size: 32px;
+            color: #6B7280;
+            font-style: italic;
+            margin-bottom: 40px;
+            padding: 0 80px;
+        }
+        
+        .cta-minimal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .cta-btn {
+            background: #1F2937;
+            color: white;
+            padding: 30px 80px;
+            border-radius: 60px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        
+        .website {
+            font-size: 38px;
+            color: #1F2937;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        
+        /* Stickers */
+        .sticker {
+            position: absolute;
+            font-size: 80px;
+            z-index: 5;
+        }
+        
+        .st1 { top: 130px; left: 60px; transform: rotate(-15deg); }
+        .st2 { top: 350px; right: 40px; transform: rotate(20deg); }
+        .st3 { bottom: 550px; left: 40px; transform: rotate(-10deg); }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+        
+        <span class="sticker st1">💍</span>
+        <span class="sticker st2">✨</span>
+        <span class="sticker st3">🤍</span>
+        
+        <div class="header">
+            <span class="viral-badge">✨ IT GIRL APPROVED ✨</span>
+            <h1 class="main-text">
+                <span class="soft">your wedding card but</span><br>
+                make it<br>
+                aesthetic
+            </h1>
+        </div>
+        
+        <div class="aesthetic-card">
+            <div class="card-inner">
+                <span class="mini-badge">Preview</span>
+                <h2 class="couple-names">Aina & Amir</h2>
+                <p class="wedding-date">12.04.2026 ✦ Kuala Lumpur</p>
+                <div class="feature-pills">
+                    <span class="pill">📍 Maps</span>
+                    <span class="pill">📅 Calendar</span>
+                    <span class="pill">💌 RSVP</span>
+                    <span class="pill">🎁 Registry</span>
+                    <span class="pill">📸 Gallery</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-section">
+            <p class="quote">"main character energy for your big day" 💫</p>
+            <div class="cta-minimal">
+                <span class="cta-btn">Create Yours Free</span>
+                <span class="website">sayakahwin.com</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

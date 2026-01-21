@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayaKahwin Instagram Carousel - Hook Slide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .poster {
+            width: 1080px;
+            height: 1350px; /* Instagram portrait */
+            background: linear-gradient(180deg, #FEF3C7 0%, #FDE68A 50%, #FCD34D 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Confetti elements */
+        .confetti {
+            position: absolute;
+            font-size: 50px;
+            opacity: 0.7;
+        }
+        
+        .c1 { top: 50px; left: 80px; transform: rotate(-20deg); }
+        .c2 { top: 100px; right: 100px; transform: rotate(15deg); }
+        .c3 { top: 250px; left: 150px; transform: rotate(25deg); font-size: 35px; }
+        .c4 { bottom: 300px; right: 80px; transform: rotate(-10deg); }
+        .c5 { bottom: 150px; left: 100px; transform: rotate(30deg); }
+        .c6 { bottom: 200px; right: 200px; transform: rotate(-25deg); font-size: 40px; }
+        .c7 { top: 400px; right: 60px; transform: rotate(5deg); font-size: 45px; }
+        
+        .content {
+            text-align: center;
+            z-index: 10;
+            padding: 60px;
+        }
+        
+        .stop-text {
+            font-size: 100px;
+            margin-bottom: 30px;
+        }
+        
+        .hook-line {
+            font-family: 'Playfair Display', serif;
+            font-size: 72px;
+            font-weight: 800;
+            color: #92400E;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+        
+        .hook-line .number {
+            font-size: 120px;
+            color: #B45309;
+            display: block;
+        }
+        
+        .subtext {
+            font-size: 34px;
+            color: #78350F;
+            margin-bottom: 50px;
+            line-height: 1.5;
+        }
+        
+        .swipe-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 32px;
+            color: #92400E;
+            font-weight: 600;
+        }
+        
+        .arrow {
+            font-size: 50px;
+            animation: bounce 1s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        
+        .brand-footer {
+            position: absolute;
+            bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .brand-logo {
+            font-size: 60px;
+        }
+        
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #92400E;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <span class="confetti c1">🎊</span>
+        <span class="confetti c2">✨</span>
+        <span class="confetti c3">💛</span>
+        <span class="confetti c4">🎉</span>
+        <span class="confetti c5">💫</span>
+        <span class="confetti c6">🌟</span>
+        <span class="confetti c7">💒</span>
+        
+        <div class="content">
+            <div class="stop-text">🛑</div>
+            
+            <h1 class="hook-line">
+                <span class="number">3</span>
+                Signs You Need<br>a Digital Wedding Card
+            </h1>
+            
+            <p class="subtext">
+                Swipe to find out if you're<br>
+                ready to level up 👀
+            </p>
+            
+            <div class="swipe-indicator">
+                <span>Swipe</span>
+                <span class="arrow">→</span>
+            </div>
+        </div>
+        
+        <div class="brand-footer">
+            <span class="brand-logo">💌</span>
+            <span class="brand-name">SayaKahwin</span>
+        </div>
+    </div>
+</body>
+</html>

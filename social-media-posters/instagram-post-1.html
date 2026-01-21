@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayaKahwin Instagram Post 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .poster {
+            width: 1080px;
+            height: 1080px;
+            background: linear-gradient(135deg, #FFF5F5 0%, #FED7D7 50%, #FEB2B2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Decorative elements */
+        .flower-top-left {
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,182,193,0.6) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .flower-bottom-right {
+            position: absolute;
+            bottom: -80px;
+            right: -80px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,182,193,0.5) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .hearts {
+            position: absolute;
+            font-size: 40px;
+            opacity: 0.3;
+        }
+        
+        .heart1 { top: 80px; left: 100px; transform: rotate(-15deg); }
+        .heart2 { top: 150px; right: 120px; transform: rotate(20deg); }
+        .heart3 { bottom: 200px; left: 80px; transform: rotate(10deg); }
+        .heart4 { bottom: 100px; right: 150px; transform: rotate(-25deg); }
+        .heart5 { top: 300px; left: 200px; transform: rotate(5deg); font-size: 25px; }
+        .heart6 { bottom: 350px; right: 180px; transform: rotate(-10deg); font-size: 30px; }
+        
+        .content {
+            text-align: center;
+            z-index: 10;
+            padding: 60px;
+        }
+        
+        .hook {
+            font-family: 'Playfair Display', serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: #C53030;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .hook .highlight {
+            display: block;
+            font-size: 90px;
+            color: #822727;
+        }
+        
+        .subtext {
+            font-size: 28px;
+            color: #744210;
+            margin-bottom: 50px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #C53030, #9B2C2C);
+            padding: 25px 60px;
+            border-radius: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(197, 48, 48, 0.4);
+        }
+        
+        .cta {
+            font-size: 32px;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .website {
+            font-size: 36px;
+            font-weight: 600;
+            color: #822727;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            position: absolute;
+            bottom: 60px;
+            font-size: 22px;
+            color: #975A16;
+            font-style: italic;
+        }
+        
+        /* Ring decoration */
+        .rings {
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            font-size: 60px;
+        }
+        
+        .envelope {
+            position: absolute;
+            bottom: 120px;
+            left: 60px;
+            font-size: 50px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="flower-top-left"></div>
+        <div class="flower-bottom-right"></div>
+        
+        <span class="hearts heart1">💕</span>
+        <span class="hearts heart2">💗</span>
+        <span class="hearts heart3">💖</span>
+        <span class="hearts heart4">💕</span>
+        <span class="hearts heart5">✨</span>
+        <span class="hearts heart6">✨</span>
+        
+        <span class="rings">💍</span>
+        <span class="envelope">💌</span>
+        
+        <div class="content">
+            <div class="hook">
+                Still sending
+                <span class="highlight">paper invites?</span>
+            </div>
+            
+            <p class="subtext">
+                It's 2026. Your wedding card<br>
+                deserves an upgrade. ✨
+            </p>
+            
+            <div class="cta-box">
+                <span class="cta">Go Digital. Go Beautiful.</span>
+            </div>
+            
+            <p class="website">sayakahwin.com</p>
+        </div>
+        
+        <p class="tagline">"Saya Kahwin" = "I'm Getting Married" 💒</p>
+    </div>
+</body>
+</html>

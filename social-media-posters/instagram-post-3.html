@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayaKahwin Instagram Post 3 - Comparison</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .poster {
+            width: 1080px;
+            height: 1080px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Abstract shapes */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            background: white;
+        }
+        
+        .s1 { width: 300px; height: 300px; top: -100px; left: -100px; }
+        .s2 { width: 200px; height: 200px; bottom: -50px; right: -50px; }
+        .s3 { width: 150px; height: 150px; top: 50%; left: -50px; }
+        
+        .content {
+            text-align: center;
+            z-index: 10;
+            width: 100%;
+            padding: 60px;
+        }
+        
+        .headline {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .comparison {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .compare-box {
+            width: 420px;
+            padding: 40px;
+            border-radius: 30px;
+        }
+        
+        .old-way {
+            background: rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .new-way {
+            background: rgba(255,255,255,0.95);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .box-header {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .old-way .box-header {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .new-way .box-header {
+            color: #764ba2;
+        }
+        
+        .list {
+            text-align: left;
+        }
+        
+        .list-item {
+            font-size: 22px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .old-way .list-item {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .new-way .list-item {
+            color: #4A5568;
+        }
+        
+        .icon {
+            font-size: 26px;
+        }
+        
+        .price-tag {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 2px dashed rgba(255,255,255,0.3);
+        }
+        
+        .old-way .price-tag {
+            color: #FC8181;
+        }
+        
+        .new-way .price-tag {
+            color: #48BB78;
+            border-top: 2px dashed rgba(102, 126, 234, 0.3);
+        }
+        
+        .cta {
+            background: white;
+            padding: 25px 70px;
+            border-radius: 50px;
+            font-size: 30px;
+            color: #764ba2;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: inline-block;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .website {
+            font-size: 40px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="shape s1"></div>
+        <div class="shape s2"></div>
+        <div class="shape s3"></div>
+        
+        <div class="content">
+            <h1 class="headline">Paper Cards vs Digital Cards 💌</h1>
+            
+            <div class="comparison">
+                <div class="compare-box old-way">
+                    <div class="box-header">
+                        <span>📜</span> Paper Invites
+                    </div>
+                    <div class="list">
+                        <div class="list-item"><span class="icon">❌</span> Printing costs</div>
+                        <div class="list-item"><span class="icon">❌</span> Gets lost in mail</div>
+                        <div class="list-item"><span class="icon">❌</span> Manual RSVP tracking</div>
+                        <div class="list-item"><span class="icon">❌</span> No updates possible</div>
+                        <div class="list-item"><span class="icon">❌</span> Not eco-friendly</div>
+                    </div>
+                    <div class="price-tag">💸 RM500-2000+</div>
+                </div>
+                
+                <div class="compare-box new-way">
+                    <div class="box-header">
+                        <span>📱</span> SayaKahwin
+                    </div>
+                    <div class="list">
+                        <div class="list-item"><span class="icon">✅</span> Share via WhatsApp</div>
+                        <div class="list-item"><span class="icon">✅</span> Instant delivery</div>
+                        <div class="list-item"><span class="icon">✅</span> Auto RSVP tracking</div>
+                        <div class="list-item"><span class="icon">✅</span> Edit anytime</div>
+                        <div class="list-item"><span class="icon">✅</span> 100% eco-friendly</div>
+                    </div>
+                    <div class="price-tag">🎉 Start FREE</div>
+                </div>
+            </div>
+            
+            <div class="cta">Make the Smart Choice →</div>
+            <p class="website">sayakahwin.com</p>
+        </div>
+    </div>
+</body>
+</html>
